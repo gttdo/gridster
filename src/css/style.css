@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: sans-serif;
+  color: black;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  background-color: olive;
+  display: grid;
+  height: 100vh;
+  padding: 15rem 15rem;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: repeat(2, min-content);
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+  justify-content: center; }
+
+.square {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; }
+  .square--1 {
+    background-color: orange; }
+  .square--2 {
+    background-color: orangered; }
+  .square--3 {
+    background-color: orchid; }
+  .square--4 {
+    background-color: blue; }
+  .square--5 {
+    background-color: chocolate; }
+  .square--6 {
+    background-color: gold; }
+  .square--btn {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all .2s; }
+    .square--btn:hover {
+      transform: translateY(-3.5px); }
+    .square--btn:active, .square--btn:focus {
+      outline: none;
+      transform: translateY(1.5px); }

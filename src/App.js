@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import './css/style.css';
+import Gold from './js/gold';
+import Red from './js/red';
+import Violet from './js/violet';
+import Blue from './js/blue';
+import Brown from './js/brown';
+import Yellow from './js/yellow';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Gold/>
+      <Red/>
+      <Violet/>
+      <Blue/>
+      <Brown/>
+      <Yellow/>
     </div>
   );
 }
